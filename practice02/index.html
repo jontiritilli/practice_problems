@@ -1,0 +1,55 @@
+<!-- Build a function that takes in an array and reverses it
+
+- Write a function that takes one parameter
+	- Parameter 1 - An array of anything
+- The function should output an array that is in reverse order from the input array
+- Example: 
+	- `var myArray = ['hello', 45, 'Bob', 'what', '23'];`
+	- `arrayReverse(myArray);`
+	- Output - `['23', 'what', 'Bob', 45, 'hello']`
+- Avoid using pre-built functions that do something similar -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Problem 02</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		div {
+			width: 100%;
+			font-size: 30px;
+			text-align: center;
+			padding: 20vh 0 20vh 0;
+			margin: 0;
+			background-color: teal;
+			border:	1px solid black;
+		}
+	</style>
+	<!-- start js here -->
+	<script type="text/javascript">
+		//debugger;
+
+		var array = [1,2,3,4];
+
+		function initializeApp(){
+			reverseArray(array);
+		}
+
+		function reverseArray(array){
+		var printThis = '';
+			for(arrayInd = array.length - 1; arrayInd>=0;arrayInd--){
+				printThis+= " " + array[arrayInd];	
+			}
+			return printThis;
+		}
+		document.getElementById("#firstDiv").innerHTML = reverseArray()
+		//console.log(reverseArray([1,2,3,4]));
+	</script>
+</head>
+<body>
+	<div id="firstDiv" onclick="initializeApp()">I'm empty...for NOW!!</div>
+</body>
+</html>

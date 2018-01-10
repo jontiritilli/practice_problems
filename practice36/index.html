@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Problem 36</title>
+	<script type="text/javascript">
+		function findVowels (string) {
+			string.toLowerCase();
+			var newString = '';
+			var vowels = ['a','e','i','o','u'];
+			for(stringIndex = 0; stringIndex<string.length; stringIndex++){
+				if(vowels.indexOf(string[stringIndex]) !== -1){
+				newString += string[stringIndex];
+				}
+			}
+			return newString;
+		}
+		console.log( findVowels('hey how many vowels are there?') )
+	</script>
+</head>
+<body>
+
+</body>
+</html>

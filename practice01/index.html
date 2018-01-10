@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Problem 01</title>
+	<script>
+	var myArray = ['bug', 'insect', 'mammal', 'reptile', 'mammoth', 'turtles'];
+	function biggerWords(word, array){
+		var biggerWordsArray = []
+		for(var arrIndex = 0; arrIndex<array.length;arrIndex++){
+			if(array[arrIndex].length>word.length){
+				biggerWordsArray.push(array[arrIndex]);
+			}
+		}
+		return biggerWordsArray;
+	}
+	console.log( biggerWords('whales',myArray) )
+	</script>
+</head>
+<body>
+
+</body>
+</html>

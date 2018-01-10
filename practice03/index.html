@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Problem 03</title>
+	<script type="text/javascript">
+		function groupTypes(array){
+			var newObject = {
+				'number': [],
+				'boolean': [],
+				'string': []
+			};
+			for (arrayInd=0; arrayInd < array.length; arrayInd++){
+				if (typeof array[arrayInd]  === 'boolean'){
+					newObject.boolean.push(array[arrayInd] +', ');
+				} else if (typeof array[arrayInd] === 'number'){
+					newObject.number.push(array[arrayInd] +', ');
+				} else if (typeof array[arrayInd] === 'string'){
+					newObject.string.push(array[arrayInd] +', ');
+				}
+			}
+			return newObject;
+		}
+		console.log(groupTypes(['hello', 34, true, false, 'goodbye', 56, 12, '25', true]))
+	</script>
+</head>
+<body>
+
+</body>
+</html>

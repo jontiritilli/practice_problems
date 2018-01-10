@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Problem 32</title>
+	<script type="text/javascript">
+		function find_middle_letters (string) {
+			var middleOfString = '';
+			if(string.length % 2 === 0){
+				middleOfString = string[(string.length/2) - 1] + string[(string.length/2)];
+			} else {
+				middleOfString = string[Math.floor(string.length/2)]
+			}
+			return middleOfString;
+		}
+		console.log( find_middle_letters( 'slaying' ) )
+	</script>
+</head>
+<body>
+
+</body>
+</html>
