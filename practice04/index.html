@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Problem 04</title>
+	<script type="text/javascript">
+		function sortAlpha(array){
+			var switched = true
+			while(switched){
+				switched = false;
+				for (arrIndex=1;arrIndex<array.length;arrIndex++){
+					var curItem = array[arrIndex];
+					var prevItem = array[arrIndex-1];
+					if( prevItem > curItem){
+						var tempItem = prevItem;
+						array[arrIndex-1] = curItem;
+						array[arrIndex] = tempItem;
+						switched = true;
+					}
+				}
+			}
+			return array;
+		}
+		console.log(sortAlpha(['cows','salmon','car','elephant']))
+	</script>
+</head>
+<body>
+
+</body>
+</html>

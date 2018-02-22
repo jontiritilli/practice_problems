@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Problem 29</title>
+	<script type="text/javascript">
+		/*function doMath (num1, num2, operator){
+			var result;
+			if(operator === '+'){
+				result = num1 + num2;
+			} else if(operator === '-'){
+				result = num1 - num2;
+			} else if(operator === 'x'){
+				result = num1 * num2;
+			} else if(operator === '/'){
+				result = num1 / num2;
+			}
+			return result;
+		}
+		function displayResult(result){
+			document.writeln(result);
+		}*/
+	function doMath(num1, num2, op){
+		var operations = {
+			'+': function(n1, n2){
+				return n1+n2;
+			},
+			'-': function(n1, n2){
+				return n1-n2;
+			},
+			'*': function(n1, n2){
+				return n1*n2;
+			},
+			'/': function(n1, n2){
+				return n1/n2;
+			}
+		}
+		operations['X'] = operations['x'] = operations['*'];
+		return operations[op](num1, num2);
+	}
+	console.log( doMath(2,5,'*') )
+	</script>
+</head>
+<body>
+
+</body>
+</html>
